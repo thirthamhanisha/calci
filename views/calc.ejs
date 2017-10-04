@@ -1,0 +1,75 @@
+<html>
+<head>
+<title>Calculator</title>
+
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+	<div class="container-fluid">
+		<div class="row">
+			<div
+				class="col-sm-offset-4 col-md-offset-4 col-lg-offset-4 col-sm-4 col-md-4 col-lg-4"
+				style="margin-top: 10%;">
+				<div class="panel panel-primary">
+					<div class="panel-heading">Calculator</div>
+					<div class="panel-body">
+						<form class="form-horizontal" role="form" method = "post" >
+							
+							<div class="form-group" >
+								<label class="col-sm-3 col-md-3 col-lg-3">value 1</label>
+								<div class="col-sm-6 col-md-6 col-lg-6">
+									<input type="text" class="form-control"
+									name="a" id="a" value="<%=a%>" >
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="col-sm-3 col-md-3 col-lg-3">value 2</label>
+								<div class="col-sm-6 col-md-6 col-lg-6">
+									<input type="text" class="form-control"
+									name="b" id="b" value="<%=b%>" >
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="col-sm-3 col-md-3 col-lg-3">Result</label>
+								<div class="col-sm-6 col-md-6 col-lg-6">
+									<input type="text" class="form-control"
+									name="result"	id="result" value="<%=result%>" >
+								</div>
+							</div>
+							<div class="form-group" >
+								<div
+									class="col-xs-offset-2 col-sm-offset-2 col-md-offset-2 col-lg-offset-2">
+									<button type="submit" class="btn btn-primary" value="add" formaction="add">add</button>
+								
+								
+									<button type="submit" class="btn btn-primary" value="sub" formaction="sub" >sub</button>
+								
+								
+									<button type="submit" class="btn btn-primary" value="mul" formaction="mul"  >mul</button>
+								
+								
+									<button type="submit" class="btn btn-primary" value="div" formaction="div"  >div</button>
+								
+								</div>
+							</div>
+							<div class="form-group">
+								<div
+									class="col-xs-offset-2 col-sm-offset-2 col-md-offset-2 col-lg-offset-2">
+									<button type="submit" class="btn btn-primary" value="clear" formaction="clear">clear</button>
+								
+								</div>
+							</div>								
+						</form>					
+                   
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

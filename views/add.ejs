@@ -1,0 +1,75 @@
+<html>
+<head>
+<title>Calculator</title>
+
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+	<div class="container-fluid">
+		<div class="row">
+			<div
+				class="col-sm-offset-4 col-md-offset-4 col-lg-offset-4 col-sm-4 col-md-4 col-lg-4"
+				style="margin-top: 10%;">
+				<div class="panel panel-primary">
+					<div class="panel-heading">Calculator</div>
+					<div class="panel-body">
+						<form class="form-horizontal" role="form" method="get" action="" >
+							
+							<div class="form-group">
+								<label class="col-sm-4 col-md-4 col-lg-4"></label>
+								<div class="col-sm-8 col-md-8 col-lg-8">
+									<input type="text" class="form-control"
+										id="a" value="<%=a%>" placeholder="0">
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="col-sm-4 col-md-4 col-lg-4"></label>
+								<div class="col-sm-8 col-md-8 col-lg-8">
+									<input type="text" class="form-control"
+										id="b" value="<%=b%>" placeholder="0">
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="col-sm-4 col-md-4 col-lg-4"></label>
+								<div class="col-sm-8 col-md-8 col-lg-8">
+									<input type="text" class="form-control"
+										id="result" value="<%=result%>" placeholder="0">
+								</div>
+							</div>
+							<div class="form-group">
+								<div
+									class="col-xs-offset-2 col-sm-offset-2 col-md-offset-2 col-lg-offset-2">
+									<button type="submit" class="btn btn-primary" >add</button>
+								
+								</div>
+							</div>
+							<div class="form-group" >
+								<div
+									class="col-xs-offset-2 col-sm-offset-2 col-md-offset-2 col-lg-offset-2">
+									<button type="submit" class="btn btn-primary"  >sub</button>
+								
+								</div>
+							</div>
+							<div class="form-group" >
+								<div
+									class="col-xs-offset-2 col-sm-offset-2 col-md-offset-2 col-lg-offset-2">
+									<button type="reset" class="btn btn-primary">clear</button>
+								
+								</div>
+							</div>	
+							
+						</form>
+						
+                   
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
