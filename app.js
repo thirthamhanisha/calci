@@ -41,45 +41,80 @@ app.get('/', function(req,res){
 });
 
 app.post('/add', function(req,res){
+	
+	
 	var a = parseInt(req.param("a"));
-	var b = parseInt(req.param("b"));	
-	var result = a + b;
-	console.log(a,b,result);	
-	res.render('calc.ejs', {result : result, a: a, b: b});
+	var b = parseInt(req.param("b"));
+	if( isNaN(a) == true || isNaN(b) == true)
+	{
+		console.log(a,b,result);
+		var	result = "please enter the values of both the numbers";
+			res.render('calc.ejs', {result : result, a: '', b: ''});	
+	}
+	else{
+		console.log("i m here");
+		var result = a + b;
+		console.log(a,b,result);	
+		res.render('calc.ejs', {result : result, a: a, b: b}); 
+		
+	}
 	
 });
 
 app.post('/sub', function(req,res){
 	var a = parseInt(req.param("a"));
 	var b = parseInt(req.param("b"));	
+	if( isNaN(a) == true || isNaN(b) == true)
+	{
+		console.log(a,b,result);
+		var	result = "please enter the values of both the numbers";
+			res.render('calc.ejs', {result : result, a: '', b: ''});	
+	}
+	else{
+	
 	var result = a - b;
 	console.log(a,b,result);	
 	res.render('calc', {result : result, a: a, b: b});
-	
+	}
 });
 
 app.post('/mul', function(req,res){
 	var a = parseInt(req.param("a"));
 	var b = parseInt(req.param("b"));	
+	if( isNaN(a) == true || isNaN(b) == true)
+	{
+		console.log(a,b,result);
+		var	result = "please enter the values of both the numbers";
+			res.render('calc.ejs', {result : result, a: '', b: ''});	
+	}
+	else{
+	
 	var result = a * b;
 	console.log(a,b,result);	
 	res.render('calc', {result : result, a: a, b: b});
-	
+	}
 });
 
 app.post('/div', function(req,res){
 	var a = parseInt(req.param("a"));
 	var b = parseInt(req.param("b"));
+	if( isNaN(a) == true || isNaN(b) == true)
+	{
+		console.log(a,b,result);
+		var	result = "please enter the values of both the numbers";
+			res.render('calc.ejs', {result : result, a: '', b: ''});	
+	}
+	else{
 	if (b != 0){
 	var result = a / b;
 	}
 	else
 		{
-	var result = "invalid number entered";
+	var result = "value2 cannot be zero. error!!";
 	}
 	console.log(a,b,result);	
 	res.render('calc', {result : result, a: a, b: b});
-	
+	}
 });
 
 app.post('/clear', function(req,res){
